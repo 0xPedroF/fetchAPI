@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0e3bb;
+}
+
+.buttons {
+    position:relative;
+}
+
+fieldset { 
+    position:relative;
+    border: 0;
+    display: flex;
+    
+}
+
+input { 
+    border: 2px solid #000;
+}
+
+.icon {
+    padding-left: 25px;
+    background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat left;
+    background-size: 20px;
+}
+
+#content {
+    text-align: center;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /*width: 90%; /* Adjust width for smaller screens */
+    max-width: 800px;
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+#buttonFetchPokemon {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#pokemonSprite {
+    display: none;
+    justify-content: center;
+    width: 100%;
+}
+
+#info {
+    margin: 20px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+#selectButton {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    background-color: #f76f6f;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#selectButton:hover {
+    background-color: #800404;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    #content {
+        width: 80%; /* Adjust width for tablets */
+    }
+
+    #info {
+        font-size: 1em; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    #content {
+        width: 95%; /* Adjust width for mobile devices */
+        padding: 1rem; /* Reduce padding for smaller screens */
+    }
+
+    #buttonFetchPokemon, #selectButton {
+        padding: 8px 16px; /* Adjust button padding for smaller screens */
+        font-size: 0.9em; /* Adjust button font size for smaller screens */
+    }
+}
