@@ -38,7 +38,7 @@ async function fetchRandomData() {
         const totalPokemons = initialData.count; //Variable with the total amout of pokemons
         console.log("Pokemons available: " + totalPokemons);
 
-        const randomOffset = Math.floor(Math.random() * totalPokemons); // Generate a random pokemon nr
+        const randomOffset = Math.floor(Math.random() * (totalPokemons)); // Generate a random pokemon nr
         console.log("Random Offset nr: " + randomOffset);
 
 
@@ -56,6 +56,7 @@ async function fetchRandomData() {
         const pokemonData = await pokemonResponse.json();
 
         displayPokemonData(pokemonData);
+        //console.log(pokemonData);
     }
     catch (error) {
         console.log(error);
