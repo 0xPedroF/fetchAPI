@@ -28,5 +28,5 @@ This project is a simple web application that fetches and displays information a
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/pokemon-random-fetcher.git
-cd pokemon-random-fetcher
+git clone https://https://github.com/0xPedroF/fetchAPI.git
+cd fetchAPI
