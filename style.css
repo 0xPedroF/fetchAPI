@@ -61,9 +61,10 @@ input {
     margin: 20px 0;
     font-size: 1.2em;
     color: #333;
+    text-align:left;
 }
 
-#selectButton {
+#buttonRandomFetch {
     padding: 10px 20px;
     font-size: 1em;
     cursor: pointer;
